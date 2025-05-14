@@ -1,9 +1,9 @@
-using BuberDinner.Domain.Entities;
+using BuberDinner.Domain.Users;
 
-namespace BuberDinner.Application.Common.Interfaces.Persistance;
+namespace BuberDinner.Application.Common.Interfaces.Persistence;
 
 public interface IUserRepository
 {
-    User? GetByEmail(string email);
+    User? GetUserByEmail(string email);
     void Add(User user);
 }
